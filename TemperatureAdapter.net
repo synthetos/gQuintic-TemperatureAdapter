@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source /Users/Alden/Projects/proj106_TemperatureAdapter/gQuintic-TemperatureAdapter/TemperatureAdapter.sch)
-    (date "Tuesday, July 03, 2018 'AMt' 10:41:57 AM")
+    (date "Tuesday, July 03, 2018 'PMt' 12:41:49 PM")
     (tool "Eeschema 4.0.2-stable")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -88,7 +88,7 @@
       (tstamp 5ADD84E6))
     (comp (ref J2)
       (value 22-27-2031)
-      (footprint _Connector:0.100_1x3_tabbed_left)
+      (footprint _Connector:0.100_1x3_RA_left)
       (libsource (lib _Connector) (part 22-27-2031))
       (sheetpath (names /Main/) (tstamps /5B3B7BFF/))
       (tstamp 5AEC5795))
@@ -100,7 +100,7 @@
       (tstamp 5AEC7150))
     (comp (ref J1)
       (value 22-27-2021)
-      (footprint _Connector:0.100_1x2_small)
+      (footprint _Connector:0.100_1x2_RA_left)
       (libsource (lib _Connector) (part 22-27-2021))
       (sheetpath (names /Main/) (tstamps /5B3B7BFF/))
       (tstamp 5B3B996C))
@@ -218,10 +218,10 @@
   (libraries
     (library (logical device)
       (uri "/Library/Application Support/kicad/library/device.lib"))
-    (library (logical _Connector)
-      (uri /Users/Alden/Projects/proj106_TemperatureAdapter/gQuintic-TemperatureAdapter/ProjectLibrary/_Connector.lib))
     (library (logical linear)
       (uri "/Library/Application Support/kicad/library/linear.lib"))
+    (library (logical _Connector)
+      (uri /Users/Alden/Projects/proj106_TemperatureAdapter/gQuintic-TemperatureAdapter/ProjectLibrary/_Connector.lib))
     (library (logical _Passive)
       (uri /Users/Alden/Projects/proj106_TemperatureAdapter/gQuintic-TemperatureAdapter/ProjectLibrary/_Passive.lib)))
   (nets
