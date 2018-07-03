@@ -1,0 +1,320 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:_Active
+LIBS:_Connector
+LIBS:_Passive
+LIBS:LoadCell-cache
+EELAYER 25 0
+EELAYER END
+$Descr USLetter 11000 8500
+encoding utf-8
+Sheet 2 2
+Title "gQuintic LoadCell Adapter"
+Date "1-July-2018"
+Rev "revC"
+Comp "Synthetos"
+Comment1 "Compatible with gQuintic revG"
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Fiducial_Top FID1
+U 1 1 5A8C10DE
+P 5150 5450
+F 0 "FID1" H 5150 5550 40  0000 C CNN
+F 1 "Fiducial_Top" H 5150 5350 40  0000 C CNN
+F 2 "_Connector:Fiducial_0.040_Top" H 5150 5450 150 0001 C CNN
+F 3 "" H 5150 5450 150 0000 C CNN
+	1    5150 5450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Fiducial_Top FID2
+U 1 1 5A8C1162
+P 5600 5450
+F 0 "FID2" H 5600 5550 40  0000 C CNN
+F 1 "Fiducial_Top" H 5600 5350 40  0000 C CNN
+F 2 "_Connector:Fiducial_0.040_Top" H 5600 5450 150 0001 C CNN
+F 3 "" H 5600 5450 150 0000 C CNN
+	1    5600 5450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Fiducial_Top FID3
+U 1 1 5A8C11D3
+P 6050 5450
+F 0 "FID3" H 6050 5550 40  0000 C CNN
+F 1 "Fiducial_Top" H 6050 5350 40  0000 C CNN
+F 2 "_Connector:Fiducial_0.040_Top" H 6050 5450 150 0001 C CNN
+F 3 "" H 6050 5450 150 0000 C CNN
+	1    6050 5450
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C2
+U 1 1 5ADD8486
+P 7800 3800
+F 0 "C2" H 7825 3900 50  0000 L CNN
+F 1 "0.1uF" H 7825 3700 50  0000 L CNN
+F 2 "_Passive:C_0402" H 7838 3650 50  0001 C CNN
+F 3 "" H 7800 3800 50  0000 C CNN
+	1    7800 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C1
+U 1 1 5ADD848C
+P 7200 3800
+F 0 "C1" H 7225 3900 50  0000 L CNN
+F 1 "0.1uF" H 7225 3700 50  0000 L CNN
+F 2 "_Passive:C_0402" H 7238 3650 50  0001 C CNN
+F 3 "" H 7200 3800 50  0000 C CNN
+	1    7200 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R1
+U 1 1 5ADD8498
+P 5700 3850
+F 0 "R1" V 5780 3850 50  0000 C CNN
+F 1 "390K" V 5700 3850 50  0000 C CNN
+F 2 "_Passive:R_0402" V 5630 3850 50  0001 C CNN
+F 3 "" H 5700 3850 50  0000 C CNN
+	1    5700 3850
+	-1   0    0    1   
+$EndComp
+$Comp
+L R R2
+U 1 1 5ADD849E
+P 5700 4250
+F 0 "R2" V 5780 4250 50  0000 C CNN
+F 1 "1K" V 5700 4250 50  0000 C CNN
+F 2 "_Passive:R_0402" V 5630 4250 50  0001 C CNN
+F 3 "" H 5700 4250 50  0000 C CNN
+	1    5700 4250
+	-1   0    0    1   
+$EndComp
+Text Label 7900 2950 0    40   ~ 0
+Vcc
+Text Label 7900 3050 0    40   ~ 0
+Vout
+$Comp
+L 0.100_1X4 J1
+U 1 1 5ADD84B2
+P 4100 3100
+F 0 "J1" H 4100 3350 40  0000 C CNN
+F 1 "0.100_1X4" V 4200 3100 50  0000 C CNN
+F 2 "_Connector:1x04_tabbed_pitch2.00mm" H 4100 3100 50  0001 C CNN
+F 3 "" H 4100 3100 50  0000 C CNN
+	1    4100 3100
+	-1   0    0    -1  
+$EndComp
+Text Label 4350 2950 0    40   ~ 0
+RED
+Text Label 4350 3050 0    40   ~ 0
+BLK
+Text Label 4350 3250 0    40   ~ 0
+GRN
+Text Label 4350 3150 0    40   ~ 0
+WHT
+Connection ~ 7200 4600
+Wire Wire Line
+	7200 4600 7200 3950
+$Comp
+L MCP6002 U1
+U 1 1 5ADD84C5
+P 5350 3650
+F 0 "U1" H 5350 3800 50  0000 L CNN
+F 1 "LMV358" H 5350 3900 50  0000 L CNN
+F 2 "Housings_SSOP:MSOP-8_3x3mm_Pitch0.65mm" H 5250 3700 50  0001 C CNN
+F 3 "" H 5350 3800 50  0000 C CNN
+	1    5350 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L MCP6002 U1
+U 2 1 5ADD84CB
+P 6350 3650
+F 0 "U1" H 6350 3800 50  0000 L CNN
+F 1 "LMV358" H 6350 3900 50  0000 L CNN
+F 2 "Housings_SSOP:MSOP-8_3x3mm_Pitch0.65mm" H 6250 3700 50  0001 C CNN
+F 3 "" H 6350 3800 50  0000 C CNN
+	2    6350 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5250 4600 5250 3950
+Wire Wire Line
+	5700 4000 5700 4100
+Wire Wire Line
+	5050 3750 5000 3750
+Wire Wire Line
+	5000 3750 5000 4050
+Wire Wire Line
+	5000 4050 5700 4050
+Connection ~ 5700 4050
+$Comp
+L R R3
+U 1 1 5ADD84E0
+P 6900 3850
+F 0 "R3" V 6980 3850 50  0000 C CNN
+F 1 "1K" V 6900 3850 50  0000 C CNN
+F 2 "_Passive:R_0402" V 6830 3850 50  0001 C CNN
+F 3 "" H 6900 3850 50  0000 C CNN
+	1    6900 3850
+	-1   0    0    1   
+$EndComp
+$Comp
+L R R4
+U 1 1 5ADD84E6
+P 6900 4250
+F 0 "R4" V 6980 4250 50  0000 C CNN
+F 1 "390K" V 6900 4250 50  0000 C CNN
+F 2 "_Passive:R_0402" V 6830 4250 50  0001 C CNN
+F 3 "" H 6900 4250 50  0000 C CNN
+	1    6900 4250
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5250 3350 5250 2950
+Connection ~ 5250 2950
+Wire Wire Line
+	6250 2950 6250 3350
+Connection ~ 6250 2950
+Wire Wire Line
+	6250 4600 6250 3950
+Connection ~ 6250 4600
+Wire Wire Line
+	6900 4000 6900 4100
+Wire Wire Line
+	6900 4600 6900 4400
+Connection ~ 6900 4600
+Wire Wire Line
+	6700 4450 6700 3650
+Connection ~ 6700 3650
+Wire Wire Line
+	6000 3550 6050 3550
+Wire Wire Line
+	6050 3750 6000 3750
+Wire Wire Line
+	6000 3750 6000 4050
+Wire Wire Line
+	6000 4050 6900 4050
+Connection ~ 6900 4050
+$Comp
+L 22-27-2031 J2
+U 1 1 5AEC5795
+P 8450 2950
+F 0 "J2" H 8450 3150 40  0000 C CNN
+F 1 "22-27-2031" V 8550 2950 40  0000 C CNN
+F 2 "_Connector:0.100_1x3_tabbed_left" H 8450 2950 50  0001 C CNN
+F 3 "" H 8450 2950 50  0000 C CNN
+	1    8450 2950
+	1    0    0    1   
+$EndComp
+$Comp
+L GNDA #PWR01
+U 1 1 5AEC5B25
+P 8050 4700
+F 0 "#PWR01" H 8050 4450 50  0001 C CNN
+F 1 "GNDA" H 8050 4550 50  0000 C CNN
+F 2 "" H 8050 4700 50  0000 C CNN
+F 3 "" H 8050 4700 50  0000 C CNN
+	1    8050 4700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6650 3650 6900 3650
+Wire Wire Line
+	7800 4600 7800 3950
+Wire Wire Line
+	4300 2950 8250 2950
+Wire Wire Line
+	7800 2950 7800 3650
+Connection ~ 7800 4600
+Wire Wire Line
+	4300 3150 6000 3150
+Connection ~ 8050 4600
+$Comp
+L D_ZENER D1
+U 1 1 5AEC7150
+P 7500 3800
+F 0 "D1" V 7400 3900 50  0000 C CNN
+F 1 "MM3Z3V0ST1G" H 7650 3900 40  0000 C CNN
+F 2 "Diodes_SMD:D_SOD-323" V 8050 3750 50  0001 C CNN
+F 3 "" H 7500 3800 50  0000 C CNN
+	1    7500 3800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7500 4600 7500 3900
+Connection ~ 7500 4600
+Wire Wire Line
+	7200 3050 7200 3650
+Wire Wire Line
+	4300 3250 5000 3250
+Wire Wire Line
+	5000 3250 5000 3550
+Wire Wire Line
+	5000 3550 5050 3550
+Wire Wire Line
+	5700 3050 5700 3700
+Wire Wire Line
+	5700 3050 8250 3050
+Connection ~ 7200 3050
+Wire Wire Line
+	7500 3050 7500 3700
+Connection ~ 7500 3050
+Wire Wire Line
+	5650 3650 5700 3650
+Connection ~ 5700 3650
+Wire Wire Line
+	6900 3650 6900 3700
+Wire Wire Line
+	6000 3150 6000 3550
+Wire Wire Line
+	5700 4400 5700 4450
+Wire Wire Line
+	5700 4450 6700 4450
+Wire Wire Line
+	5250 4600 8050 4600
+Connection ~ 7800 2950
+Wire Wire Line
+	8050 2850 8050 4700
+Wire Wire Line
+	4550 2850 8250 2850
+Wire Wire Line
+	4550 2850 4550 3050
+Connection ~ 8050 2850
+Wire Wire Line
+	4550 3050 4300 3050
+$EndSCHEMATC
