@@ -1,4 +1,4 @@
-update=Tuesday, July 03, 2018 'AMt' 09:14:26 AM
+update=Tuesday, July 03, 2018 'AMt' 10:28:37 AM
 version=1
 last_client=kicad
 [pcbnew]
@@ -64,3 +64,13 @@ LibName32=ProjectLibrary/_Passive
 LibName33=/Users/Alden/Projects/Kicad/__Library/__Active
 LibName34=/Users/Alden/Projects/Kicad/__Library/__Connector
 LibName35=/Users/Alden/Projects/Kicad/__Library/__Passive
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=Pcbnew
+SpiceForceRefPrefix=0
+SpiceUseNetNumbers=0
+LabSize=60
