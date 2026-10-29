@@ -1,13 +1,73 @@
-(module Test_Point_SMD_0.040_Top (layer F.Cu) (tedit 57FB5FB9)
-  (descr "Mesurement Point, Round, SMD Pad, DM 1.5mm,")
-  (tags "Mesurement Point Round SMD Pad 1.5mm")
-  (attr virtual)
-  (fp_text reference REF** (at 2.286 0.254) (layer Dwgs.User) hide
-    (effects (font (size 0.635 0.635) (thickness 0.1016)))
-  )
-  (fp_text value Test_Point_SMD_0.040_Top (at 0 -1.27) (layer F.SilkS)
-    (effects (font (size 0.635 0.635) (thickness 0.1016)))
-  )
-  (fp_circle (center 0 0) (end 0.7112 0) (layer F.CrtYd) (width 0.05))
-  (pad 1 smd circle (at 0 0) (size 1.016 1.016) (layers F.Cu F.Mask))
+(footprint "Test_Point_SMD_0.040_Top"
+	(version 20260513)
+	(generator "pcbnew")
+	(generator_version "10.99")
+	(layer "F.Cu")
+	(descr "Mesurement Point, Round, SMD Pad, DM 1.5mm,")
+	(tags "Mesurement Point Round SMD Pad 1.5mm")
+	(property "Reference" "REF**"
+		(at 2.286 0.254 0)
+		(layer "Dwgs.User")
+		(hide yes)
+		(uuid "5ef2eb03-2da9-45d7-bdb0-5cb8a6190252")
+		(effects
+			(font
+				(size 0.635 0.635)
+				(thickness 0.1016)
+			)
+		)
+	)
+	(property "Value" "Test_Point_SMD_0.040_Top"
+		(at 0 -1.27 0)
+		(layer "F.SilkS")
+		(uuid "da6d69e8-a498-4d8d-a45e-bda06a40ceb7")
+		(effects
+			(font
+				(size 0.635 0.635)
+				(thickness 0.1016)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "948a1c8a-780d-4669-a270-ce8af467511e")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "ea3b2d9b-61d5-48dd-ae23-3863075d6780")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(attr exclude_from_pos_files exclude_from_bom)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_circle
+		(center 0 0)
+		(end 0.7112 0)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "d79563f9-3441-4a40-86ba-3938bc61c739")
+	)
+	(pad "1" smd circle
+		(at 0 0)
+		(size 1.016 1.016)
+		(layers "F.Cu" "F.Mask")
+		(uuid "e5b8fb10-db82-4ebd-9bd0-8df9ec8d7410")
+	)
+	(embedded_fonts no)
 )

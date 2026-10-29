@@ -1,13 +1,73 @@
-(module Test_Point_SMD_0.040 (layer F.Cu) (tedit 57A0858F)
-  (descr "Mesurement Point, Round, SMD Pad, DM 1.5mm,")
-  (tags "Mesurement Point Round SMD Pad 1.5mm")
-  (attr virtual)
-  (fp_text reference REF** (at 0.1778 -1.3208) (layer F.SilkS)
-    (effects (font (size 0.635 0.635) (thickness 0.1016)))
-  )
-  (fp_text value Test_Point_SMD_0.040 (at 0 2) (layer F.Fab) hide
-    (effects (font (size 1 1) (thickness 0.15)))
-  )
-  (fp_circle (center 0 0) (end 0.7112 0) (layer F.CrtYd) (width 0.05))
-  (pad 1 smd circle (at 0 0) (size 1.016 1.016) (layers F.Cu F.Mask))
+(footprint "Test_Point_SMD_0.040"
+	(version 20260513)
+	(generator "pcbnew")
+	(generator_version "10.99")
+	(layer "F.Cu")
+	(descr "Mesurement Point, Round, SMD Pad, DM 1.5mm,")
+	(tags "Mesurement Point Round SMD Pad 1.5mm")
+	(property "Reference" "REF**"
+		(at 0.1778 -1.3208 0)
+		(layer "F.SilkS")
+		(uuid "05671907-771e-4603-b1c1-beaed184e68a")
+		(effects
+			(font
+				(size 0.635 0.635)
+				(thickness 0.1016)
+			)
+		)
+	)
+	(property "Value" "Test_Point_SMD_0.040"
+		(at 0 2 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "b5fdee98-88f5-48be-b5d5-d2ad0d9c0fa6")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "83a86ad8-a205-4d64-8ebd-3174686e048e")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "5058f3d1-1a8e-4011-a1d9-17f579227e0f")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(attr exclude_from_pos_files exclude_from_bom)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_circle
+		(center 0 0)
+		(end 0.7112 0)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "c85d31f7-f065-41e2-8d7f-c5b92ce7dda6")
+	)
+	(pad "1" smd circle
+		(at 0 0)
+		(size 1.016 1.016)
+		(layers "F.Cu" "F.Mask")
+		(uuid "449ea57b-9fc1-43f3-8ac8-a726a0b2a48a")
+	)
+	(embedded_fonts no)
 )

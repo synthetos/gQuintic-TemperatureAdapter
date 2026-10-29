@@ -1,13 +1,75 @@
-(module Measurement_Points:Measurement_Point_Round-TH_Big (layer F.Cu) (tedit 576BADA3)
-  (descr "Mesurement Point, Round, Trough Hole,  DM 3mm, Drill 1.5mm,")
-  (tags "Mesurement Point Round Trough Hole 3mm 1.5mm")
-  (attr virtual)
-  (fp_text reference TP1 (at 0 -3) (layer F.SilkS) hide
-    (effects (font (size 1 1) (thickness 0.15)))
-  )
-  (fp_text value GND (at 2.37744 2.10058) (layer F.Fab)
-    (effects (font (size 1 1) (thickness 0.15)))
-  )
-  (fp_circle (center 0 0) (end 1.75 0) (layer F.CrtYd) (width 0.05))
-  (pad 1 thru_hole circle (at 0 0) (size 3 3) (drill 1.5) (layers *.Cu *.Mask F.SilkS))
+(footprint "Measurement_Point_Round-TH_Big"
+	(version 20260513)
+	(generator "pcbnew")
+	(generator_version "10.99")
+	(layer "F.Cu")
+	(descr "Mesurement Point, Round, Trough Hole,  DM 3mm, Drill 1.5mm,")
+	(tags "Mesurement Point Round Trough Hole 3mm 1.5mm")
+	(property "Reference" "TP1"
+		(at 0 -3 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "ef77ea64-9702-474e-beb3-e1ac52396d41")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "GND"
+		(at 2.37744 2.10058 0)
+		(layer "F.Fab")
+		(uuid "50a7867f-0a4b-468a-b6f6-12edad01914b")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "d46138a6-e192-4a9b-bc75-fb3bc94b19a5")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "40eb298e-29d1-4ce0-b5df-5aea03dacfcc")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(attr exclude_from_pos_files exclude_from_bom)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_circle
+		(center 0 0)
+		(end 1.75 0)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "8f6843ff-6f4e-4338-b02e-e1062b0b43bb")
+	)
+	(pad "1" thru_hole circle
+		(at 0 0)
+		(size 3 3)
+		(drill 1.5)
+		(layers "*.Cu" "*.Mask" "F.SilkS")
+		(remove_unused_layers no)
+		(uuid "ac304013-52bd-4bcb-8260-681cc47ebef2")
+	)
+	(embedded_fonts no)
 )

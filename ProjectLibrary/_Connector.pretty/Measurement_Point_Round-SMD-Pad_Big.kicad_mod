@@ -1,13 +1,72 @@
-(module Measurement_Point_Round-SMD-Pad_Big (layer F.Cu) (tedit 56C35F3F)
-  (descr "Mesurement Point, Round, SMD Pad, DM 3mm,")
-  (tags "Mesurement Point Round SMD Pad 3mm")
-  (attr virtual)
-  (fp_text reference REF** (at 0 -3) (layer F.SilkS)
-    (effects (font (size 1 1) (thickness 0.15)))
-  )
-  (fp_text value Measurement_Point_Round-SMD-Pad_Big (at 0 3) (layer F.Fab)
-    (effects (font (size 1 1) (thickness 0.15)))
-  )
-  (fp_circle (center 0 0) (end 1.75 0) (layer F.CrtYd) (width 0.05))
-  (pad 1 smd circle (at 0 0) (size 3 3) (layers F.Cu F.Mask))
+(footprint "Measurement_Point_Round-SMD-Pad_Big"
+	(version 20260513)
+	(generator "pcbnew")
+	(generator_version "10.99")
+	(layer "F.Cu")
+	(descr "Mesurement Point, Round, SMD Pad, DM 3mm,")
+	(tags "Mesurement Point Round SMD Pad 3mm")
+	(property "Reference" "REF**"
+		(at 0 -3 0)
+		(layer "F.SilkS")
+		(uuid "4538aca9-5770-4d27-ab39-46ed6dd31e9f")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "Measurement_Point_Round-SMD-Pad_Big"
+		(at 0 3 0)
+		(layer "F.Fab")
+		(uuid "be737d4f-2637-4f67-b253-080aca74a9cf")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "b9538945-b0e4-43fc-85a5-b94457fd53fb")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "e4652e8f-eb78-405c-88a3-46ca888ae73e")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(attr exclude_from_pos_files exclude_from_bom)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_circle
+		(center 0 0)
+		(end 1.75 0)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "30b7b909-4c3e-402e-939b-6e67934b419b")
+	)
+	(pad "1" smd circle
+		(at 0 0)
+		(size 3 3)
+		(layers "F.Cu" "F.Mask")
+		(uuid "d9cc9460-dc7d-4ef2-aec4-935369131589")
+	)
+	(embedded_fonts no)
 )

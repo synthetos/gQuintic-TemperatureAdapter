@@ -1,13 +1,86 @@
-(module MountingHole__0.025 (layer F.Cu) (tedit 5A86DBCE)
-  (descr "Mounting Hole 3.2mm, no annular, M3")
-  (tags "mounting hole 3.2mm no annular m3")
-  (fp_text reference REF** (at 0.33 -1.82) (layer F.SilkS) hide
-    (effects (font (size 1 1) (thickness 0.15)))
-  )
-  (fp_text value MountingHole_0.025 (at 0.01 2.03) (layer F.Fab) hide
-    (effects (font (size 1 1) (thickness 0.15)))
-  )
-  (fp_circle (center 0 0) (end 0.78 -0.08) (layer Cmts.User) (width 0.15))
-  (fp_circle (center 0 0) (end 1 -0.2) (layer F.CrtYd) (width 0.05))
-  (pad "" np_thru_hole circle (at 0 0) (size 0.762 0.762) (drill 0.635) (layers *.Cu *.Mask F.SilkS))
+(footprint "MountingHole__0.025"
+	(version 20260513)
+	(generator "pcbnew")
+	(generator_version "10.99")
+	(layer "F.Cu")
+	(descr "Mounting Hole 3.2mm, no annular, M3")
+	(tags "mounting hole 3.2mm no annular m3")
+	(property "Reference" "REF**"
+		(at 0.33 -1.82 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "b67f7365-0072-4e48-ae07-33de0e475f3b")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "MountingHole_0.025"
+		(at 0.01 2.03 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "314d597d-834d-408a-bacb-33c19b009682")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "96fef1db-477e-4621-9344-4455024b87ad")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "aa66cb57-a3e8-48f4-88d2-d716838864cc")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(attr through_hole)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_circle
+		(center 0 0)
+		(end 0.78 -0.08)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(fill no)
+		(layer "Cmts.User")
+		(uuid "2a57e84f-1fe3-42e3-a61b-59d58dee9827")
+	)
+	(fp_circle
+		(center 0 0)
+		(end 1 -0.2)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "aebd8305-d6f4-4661-9284-42a305720006")
+	)
+	(pad "" np_thru_hole circle
+		(at 0 0)
+		(size 0.762 0.762)
+		(drill 0.635)
+		(layers "*.Cu" "*.Mask" "F.SilkS")
+		(uuid "309b73bf-a22f-453f-8010-c8dadee1fd82")
+	)
+	(embedded_fonts no)
 )

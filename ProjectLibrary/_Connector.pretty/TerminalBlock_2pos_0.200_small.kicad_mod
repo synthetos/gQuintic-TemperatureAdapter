@@ -1,26 +1,182 @@
-(module TerminalBlock_2pos_0.200_small (layer F.Cu) (tedit 5796207A)
-  (descr "2-way 3.5mm pitch terminal block, Phoenix PT series")
-  (fp_text reference REF** (at 0.96 -4.2635) (layer F.SilkS)
-    (effects (font (size 1 1) (thickness 0.15)))
-  )
-  (fp_text value TerminalBlock_2pos_0.200_small (at 0.433 5.9365) (layer F.Fab) hide
-    (effects (font (size 1 1) (thickness 0.15)))
-  )
-  (fp_line (start -4.44 -3.3635) (end 4.56 -3.3635) (layer F.CrtYd) (width 0.05))
-  (fp_line (start -4.44 4.6365) (end -4.44 -3.3635) (layer F.CrtYd) (width 0.05))
-  (fp_line (start 4.56 4.6365) (end -4.44 4.6365) (layer F.CrtYd) (width 0.05))
-  (fp_line (start 4.56 -3.3635) (end 4.56 4.6365) (layer F.CrtYd) (width 0.05))
-  (fp_line (start 0.06 4.1365) (end 0.06 4.5365) (layer F.SilkS) (width 0.15))
-  (fp_line (start -4.29 2.9365) (end 4.36 2.9365) (layer F.SilkS) (width 0.15))
-  (fp_line (start -4.29 4.0365) (end 4.46 4.0365) (layer F.SilkS) (width 0.15))
-  (fp_line (start -4.29 -3.1635) (end -4.29 4.4365) (layer F.SilkS) (width 0.15))
-  (fp_line (start 4.46 4.5365) (end 4.46 -3.0635) (layer F.SilkS) (width 0.15))
-  (fp_line (start 4.46 -3.1635) (end -4.29 -3.1635) (layer F.SilkS) (width 0.15))
-  (pad 2 thru_hole circle (at 2.54 -0.0635) (size 2.032 2.032) (drill 1.2) (layers *.Cu *.Mask F.SilkS))
-  (pad 1 thru_hole circle (at -2.54 -0.0635) (size 2.032 2.032) (drill 1.2) (layers *.Cu *.Mask F.SilkS))
-  (model Terminal_Blocks.3dshapes/TerminalBlock_Pheonix_PT-3.5mm_2pol.wrl
-    (at (xyz 0 0 0))
-    (scale (xyz 1 1 1))
-    (rotate (xyz 0 0 0))
-  )
+(footprint "TerminalBlock_2pos_0.200_small"
+	(version 20260513)
+	(generator "pcbnew")
+	(generator_version "10.99")
+	(layer "F.Cu")
+	(descr "2-way 3.5mm pitch terminal block, Phoenix PT series")
+	(property "Reference" "REF**"
+		(at 0.96 -4.2635 0)
+		(layer "F.SilkS")
+		(uuid "1faaf9ad-38c3-4577-a5e4-3d3c6d3336a4")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "TerminalBlock_2pos_0.200_small"
+		(at 0.433 5.9365 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "b0b08139-7038-439d-a406-62e7abdaf3c7")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "456e35f9-e457-422f-ab0a-45cb7b355d9e")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "76aeaf9b-6b91-48a3-85ea-ec6946a9b9aa")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(attr through_hole)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_line
+		(start -4.29 -3.1635)
+		(end -4.29 4.4365)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "b4bd76f1-52a8-45dc-9a12-99a5ad4acbbc")
+	)
+	(fp_line
+		(start -4.29 2.9365)
+		(end 4.36 2.9365)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "58ed4d3b-dd77-4625-83fd-a5b8478f8f8e")
+	)
+	(fp_line
+		(start -4.29 4.0365)
+		(end 4.46 4.0365)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "1427e6fa-ea29-4671-9f3c-300f0ea6f078")
+	)
+	(fp_line
+		(start 0.06 4.1365)
+		(end 0.06 4.5365)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "8bb78642-e420-4cab-9618-8dcb787d41d4")
+	)
+	(fp_line
+		(start 4.46 -3.1635)
+		(end -4.29 -3.1635)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "9ca9bcce-c3e9-4171-bec9-9a869e7429bb")
+	)
+	(fp_line
+		(start 4.46 4.5365)
+		(end 4.46 -3.0635)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "dfc841d5-3642-4acc-b994-d1afd0d813f5")
+	)
+	(fp_line
+		(start -4.44 -3.3635)
+		(end 4.56 -3.3635)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "ed9071c9-8b40-4a36-b0b4-d75f53441428")
+	)
+	(fp_line
+		(start -4.44 4.6365)
+		(end -4.44 -3.3635)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "65079b44-0903-448a-8142-9104716d7433")
+	)
+	(fp_line
+		(start 4.56 -3.3635)
+		(end 4.56 4.6365)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "4b692f07-5dae-4ad4-832a-36a45638d01b")
+	)
+	(fp_line
+		(start 4.56 4.6365)
+		(end -4.44 4.6365)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "62d7c702-57a3-4da1-9f08-9ac053717b7f")
+	)
+	(pad "1" thru_hole circle
+		(at -2.54 -0.0635)
+		(size 2.032 2.032)
+		(drill 1.2)
+		(layers "*.Cu" "*.Mask" "F.SilkS")
+		(remove_unused_layers no)
+		(uuid "54a6b4ec-44ba-48da-8f99-e89f71f91fec")
+	)
+	(pad "2" thru_hole circle
+		(at 2.54 -0.0635)
+		(size 2.032 2.032)
+		(drill 1.2)
+		(layers "*.Cu" "*.Mask" "F.SilkS")
+		(remove_unused_layers no)
+		(uuid "28ff8adf-0f08-488d-b962-7e056ed21545")
+	)
+	(embedded_fonts no)
+	(model "Terminal_Blocks.3dshapes/TerminalBlock_Pheonix_PT-3.5mm_2pol.wrl"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
 )

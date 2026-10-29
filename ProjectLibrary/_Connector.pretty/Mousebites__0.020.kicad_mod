@@ -1,15 +1,92 @@
-(module Mousebites__0.020 (layer F.Cu) (tedit 5A896CFB)
-  (descr "Mounting Hole 3.2mm, no annular, M3")
-  (tags "mounting hole 3.2mm no annular m3")
-  (fp_text reference mb** (at 0.33 -1.82) (layer F.SilkS) hide
-    (effects (font (size 1 1) (thickness 0.15)))
-  )
-  (fp_text value Mousebites_0.020 (at 0.01 2.03) (layer F.Fab) hide
-    (effects (font (size 1 1) (thickness 0.15)))
-  )
-  (pad "" np_thru_hole circle (at 0 0) (size 0.635 0.635) (drill 0.508) (layers *.Cu *.Mask F.SilkS))
-  (pad "" np_thru_hole circle (at 1.016 0) (size 0.635 0.635) (drill 0.508) (layers *.Cu *.Mask F.SilkS))
-  (pad "" np_thru_hole circle (at 2.032 0) (size 0.635 0.635) (drill 0.508) (layers *.Cu *.Mask F.SilkS))
-  (pad "" np_thru_hole circle (at -2.032 0) (size 0.635 0.635) (drill 0.508) (layers *.Cu *.Mask F.SilkS))
-  (pad "" np_thru_hole circle (at -1.016 0) (size 0.635 0.635) (drill 0.508) (layers *.Cu *.Mask F.SilkS))
+(footprint "Mousebites__0.020"
+	(version 20260513)
+	(generator "pcbnew")
+	(generator_version "10.99")
+	(layer "F.Cu")
+	(descr "Mounting Hole 3.2mm, no annular, M3")
+	(tags "mounting hole 3.2mm no annular m3")
+	(property "Reference" "mb**"
+		(at 0.33 -1.82 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "cd70e919-ac9d-48f2-96c0-227947fdf37d")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "Mousebites_0.020"
+		(at 0.01 2.03 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "b3cd28c4-2e2f-42dd-a40f-a030cf20c52f")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "b9f61550-1be9-40a2-8b4b-2f6f46d46bc7")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "f93bdc62-ef25-400a-b382-1091952ca229")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(attr through_hole)
+	(duplicate_pad_numbers_are_jumpers no)
+	(pad "" np_thru_hole circle
+		(at -2.032 0)
+		(size 0.635 0.635)
+		(drill 0.508)
+		(layers "*.Cu" "*.Mask" "F.SilkS")
+		(uuid "90fd1a70-4e38-4672-baee-32da4da7d4fb")
+	)
+	(pad "" np_thru_hole circle
+		(at -1.016 0)
+		(size 0.635 0.635)
+		(drill 0.508)
+		(layers "*.Cu" "*.Mask" "F.SilkS")
+		(uuid "fa2652cd-bb15-47bc-9ae6-87371a7e23b0")
+	)
+	(pad "" np_thru_hole circle
+		(at 0 0)
+		(size 0.635 0.635)
+		(drill 0.508)
+		(layers "*.Cu" "*.Mask" "F.SilkS")
+		(uuid "0a1639ea-09b9-4843-9f60-54b9f60b0db0")
+	)
+	(pad "" np_thru_hole circle
+		(at 1.016 0)
+		(size 0.635 0.635)
+		(drill 0.508)
+		(layers "*.Cu" "*.Mask" "F.SilkS")
+		(uuid "38b9792a-e932-431e-896c-0e9f71e6f97f")
+	)
+	(pad "" np_thru_hole circle
+		(at 2.032 0)
+		(size 0.635 0.635)
+		(drill 0.508)
+		(layers "*.Cu" "*.Mask" "F.SilkS")
+		(uuid "a257d8cc-1df6-4ebf-946f-14701170ac7d")
+	)
+	(embedded_fonts no)
 )

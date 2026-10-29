@@ -1,13 +1,74 @@
-(module Test_Point_SMD_0.040_Bottom (layer F.Cu) (tedit 57FB6796)
-  (descr "Mesurement Point, Round, SMD Pad, DM 1.5mm,")
-  (tags "Mesurement Point Round SMD Pad 1.5mm")
-  (attr virtual)
-  (fp_text reference REF** (at 0.1778 -1.3208) (layer Dwgs.User) hide
-    (effects (font (size 0.635 0.635) (thickness 0.1016)))
-  )
-  (fp_text value Test_Point_SMD_0.040_Bottom (at 0 1.27) (layer B.SilkS)
-    (effects (font (size 0.635 0.635) (thickness 0.1016)) (justify mirror))
-  )
-  (fp_circle (center 0 0) (end 0.7112 0) (layer F.CrtYd) (width 0.05))
-  (pad 1 smd circle (at 0 0) (size 1.016 1.016) (layers B.Cu B.Mask))
+(footprint "Test_Point_SMD_0.040_Bottom"
+	(version 20260513)
+	(generator "pcbnew")
+	(generator_version "10.99")
+	(layer "F.Cu")
+	(descr "Mesurement Point, Round, SMD Pad, DM 1.5mm,")
+	(tags "Mesurement Point Round SMD Pad 1.5mm")
+	(property "Reference" "REF**"
+		(at 0.1778 -1.3208 0)
+		(layer "Dwgs.User")
+		(hide yes)
+		(uuid "e92c49e5-9150-4f51-8f19-134011280fc5")
+		(effects
+			(font
+				(size 0.635 0.635)
+				(thickness 0.1016)
+			)
+		)
+	)
+	(property "Value" "Test_Point_SMD_0.040_Bottom"
+		(at 0 1.27 0)
+		(layer "B.SilkS")
+		(uuid "eb8fa76c-cb9a-4765-b5fd-815fb70c2a14")
+		(effects
+			(font
+				(size 0.635 0.635)
+				(thickness 0.1016)
+			)
+			(justify mirror)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "f5cb706c-7ffa-416b-98e8-649669313015")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "21c00877-0ce0-4c0a-8733-c9f75607d910")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(attr exclude_from_pos_files exclude_from_bom)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_circle
+		(center 0 0)
+		(end 0.7112 0)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "695bd598-e0fa-486f-91cf-c156b62406ff")
+	)
+	(pad "1" smd circle
+		(at 0 0)
+		(size 1.016 1.016)
+		(layers "B.Cu" "B.Mask")
+		(uuid "ecec2a4e-64a2-41c1-9631-52c94b0023a3")
+	)
+	(embedded_fonts no)
 )

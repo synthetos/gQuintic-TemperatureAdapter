@@ -1,13 +1,87 @@
-(module Mounting_Holes:MountingHole_3.2mm_M3_Pad locked (layer F.Cu) (tedit 576AE0A7)
-  (descr "Mounting Hole 3.2mm, M3")
-  (tags "mounting hole 3.2mm m3")
-  (fp_text reference H4 (at 0 -4.2) (layer F.SilkS) hide
-    (effects (font (size 1 1) (thickness 0.15)))
-  )
-  (fp_text value HOLE_GNDD (at 0 4.2) (layer F.Fab) hide
-    (effects (font (size 1 1) (thickness 0.15)))
-  )
-  (fp_circle (center 0 0) (end 3.2 0) (layer Cmts.User) (width 0.15))
-  (fp_circle (center 0 0) (end 3.45 0) (layer F.CrtYd) (width 0.05))
-  (pad 1 thru_hole circle (at 0 0) (size 6.4 6.4) (drill 3.2) (layers *.Cu *.Mask F.SilkS))
+(footprint "MountingHole_3.2mm_M3_Pad"
+	(version 20260513)
+	(generator "pcbnew")
+	(generator_version "10.99")
+	(layer "F.Cu")
+	(descr "Mounting Hole 3.2mm, M3")
+	(tags "mounting hole 3.2mm m3")
+	(property "Reference" "H4"
+		(at 0 -4.2 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "03167d96-2695-4ecd-a3e2-874b5df8cb47")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "HOLE_GNDD"
+		(at 0 4.2 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "5bbabc39-9469-44b0-84d1-932f45ae242f")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "574ec925-2d7b-474c-be9f-f4795eb2f0ba")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "4da99edd-a17f-4bfb-93b6-a291e66c01af")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(attr through_hole)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_circle
+		(center 0 0)
+		(end 3.2 0)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(fill no)
+		(layer "Cmts.User")
+		(uuid "20f50d88-7fa5-46a9-9441-343409f0fd72")
+	)
+	(fp_circle
+		(center 0 0)
+		(end 3.45 0)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "7848010c-d338-4405-8be0-ff9c452a4fad")
+	)
+	(pad "1" thru_hole circle
+		(at 0 0)
+		(size 6.4 6.4)
+		(drill 3.2)
+		(layers "*.Cu" "*.Mask" "F.SilkS")
+		(remove_unused_layers no)
+		(uuid "41d626b4-5751-4745-a72c-8a292e08c968")
+	)
+	(embedded_fonts no)
 )
